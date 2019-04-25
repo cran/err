@@ -1,6 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# err <img src="man/figures/logo.png" align="right" />
+
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build
 status](https://travis-ci.com/poissonconsulting/err.svg?branch=master)](https://travis-ci.com/poissonconsulting/err)
@@ -12,6 +14,7 @@ status](https://codecov.io/gh/poissonconsulting/err/branch/master/graph/badge.sv
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/err)](https://cran.r-project.org/package=err)
+![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/err)
 
 ## Introduction
 
@@ -62,7 +65,7 @@ co(fox[1:5], one = one, none = none, some = some, lots = lots, nlots = 5)
 
 The following `sprintf`-like types can be used in the custom messages:
 
-  - `%c`: the object as a comma separated list (producted by a `cc`
+  - `%c`: the object as a comma separated list (produced by a `cc`
     function)
   - `%n`: the length of the object
   - `%o`: the name of the object
@@ -124,39 +127,25 @@ err(cn(2))
 
 ## Installation
 
+To install the latest release version from
+[CRAN](https://cran.r-project.org)
+
+    install.packages("err")
+
 To install the latest development version from
 [GitHub](https://github.com/poissonconsulting/err)
 
-    # install.packages("devtools")
+    if(!"devtools" %in% installed.packages()[,1]) 
+      install.packages("devtools")
     devtools::install_github("poissonconsulting/err")
 
 To install the latest development version from the Poisson drat
 [repository](https://github.com/poissonconsulting/drat)
 
-    # install.packages("drat")
+    if(!"drat" %in% installed.packages()[,1]) 
+      install.packages("drat")
     drat::addRepo("poissonconsulting")
     install.packages("err")
-
-## Citation
-
-``` 
-
-To cite package 'err' in publications use:
-
-  Joe Thorley and James Dunham (2018). err: Customizable Object
-  Sensitive Messages. R package version 0.0.1.
-  https://github.com/poissonconsulting/err
-
-A BibTeX entry for LaTeX users is
-
-  @Manual{,
-    title = {err: Customizable Object Sensitive Messages},
-    author = {Joe Thorley and James Dunham},
-    year = {2018},
-    note = {R package version 0.0.1},
-    url = {https://github.com/poissonconsulting/err},
-  }
-```
 
 ## Contribution
 
